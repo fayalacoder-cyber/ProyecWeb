@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Web | Retos de Programación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      /* Animación de entrada */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(15px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in {
+        opacity: 0;
+        animation: fadeInUp 0.8s ease forwards;
+      }
+
+      .fade-in:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .fade-in:nth-child(2) {
+        animation-delay: 0.3s;
+      }
+      .fade-in:nth-child(3) {
+        animation-delay: 0.5s;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-gradient-to-b from-black via-sky-950 to-gray-800 text-gray-200 font-sans min-h-screen"
+  >
+    <!-- Header -->
+    <header
+      class="flex justify-between items-center px-6 py-4 bg-gray-900 bg-opacity-90 shadow-md"
+    >
+      <div class="flex items-center gap-3">
+        <img
+          src="./assets/icons/code-window (1).png"
+          alt="logo"
+          class="w-7 h-7 opacity-90"
+        />
+        <h1 class="text-xl font-semibold text-green-400 tracking-wide">
+          Project Web
+        </h1>
+      </div>
+      <nav>
+        <ul class="flex gap-6 text-sm">
+          <li>
+            <a href="#" class="hover:text-green-300 transition">Inicio</a>
+          </li>
+          <li>
+            <a href="desboard.html" class="hover:text-green-300 transition"
+              >Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="leader.html" class="hover:text-green-300 transition"
+              >Ranking</a
+            >
+          </li>
+          <li>
+            <a href="login.html" class="hover:text-green-300 transition"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="text-center py-20 px-4 fade-in">
+      <h2 class="text-4xl font-bold mb-4 text-white">
+        Acepta retos y mejora tus habilidades de diseño y programación
+      </h2>
+      <p class="mb-8 text-gray-300 text-base max-w-2xl mx-auto">
+        Resuelve desafíos, gana experiencia y construye un portafolio sólido que
+        demuestre tu progreso como desarrollador.
+      </p>
+      <a
+        href="#dashboard"
+        class="inline-block px-6 py-2 bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg shadow-lg transition transform hover:scale-105"
+      >
+        Empezar
+      </a>
+    </section>
+
+    <!-- Retos destacados -->
+    <section class="py-20 px-80">
+      <h3 class="text-center text-4xl font-bold mb-10 text-white">
+        Retos Destacados
+      </h3>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
+        <!-- Card de ejemplo -->
+        <div
+          class="fade-in bg-gray-800/80 border border-gray-700 rounded-xl p-4 hover:shadow-lg hover:shadow-green-500/10 transition transform hover:-translate-y-1"
+        >
+          <h4 class="text-base font-semibold mb-1 text-white">
+            Presento mis habilidades
+          </h4>
+          <p class="text-gray-400 text-sm mb-3 leading-snug">
+            Nivel: Fácil — Crea una presentación con TailwindCSS y HTML
+            mostrando tus habilidades.
+          </p>
+          <a href="reto.html" class="text-green-400 text-sm hover:underline"
+            >Ver Reto</a
+          >
+        </div>
+        <div
+          class="fade-in bg-gray-800/80 border border-gray-700 rounded-xl p-4 hover:shadow-lg hover:shadow-green-500/10 transition transform hover:-translate-y-1"
+        >
+          <h4 class="text-base font-semibold mb-1 text-white">
+            Presento mis habilidades
+          </h4>
+          <p class="text-gray-400 text-sm mb-3 leading-snug">
+            Nivel: Fácil — Crea una presentación con TailwindCSS y HTML
+            mostrando tus habilidades.
+          </p>
+          <a href="reto.html" class="text-green-400 text-sm hover:underline"
+            >Ver Reto</a
+          >
+        </div>
+        <div
+          class="fade-in bg-gray-800/80 border border-gray-700 rounded-xl p-4 hover:shadow-lg hover:shadow-green-500/10 transition transform hover:-translate-y-1"
+        >
+          <h4 class="text-base font-semibold mb-1 text-white">
+            Presento mis habilidades
+          </h4>
+          <p class="text-gray-400 text-sm mb-3 leading-snug">
+            Nivel: Fácil — Crea una presentación con TailwindCSS y HTML
+            mostrando tus habilidades.
+          </p>
+          <a href="reto.html" class="text-green-400 text-sm hover:underline"
+            >Ver Reto</a
+          >
+        </div>
+        <div
+          class="fade-in bg-gray-800/80 border border-gray-700 rounded-xl p-4 hover:shadow-lg hover:shadow-green-500/10 transition transform hover:-translate-y-1"
+        >
+          <h4 class="text-base font-semibold mb-1 text-white">
+            Presento mis habilidades
+          </h4>
+          <p class="text-gray-400 text-sm mb-3 leading-snug">
+            Nivel: Fácil — Crea una presentación con TailwindCSS y HTML
+            mostrando tus habilidades.
+          </p>
+          <a href="reto.html" class="text-green-400 text-sm hover:underline"
+            >Ver Reto</a
+          >
+        </div>
+        <div
+          class="fade-in bg-gray-800/80 border border-gray-700 rounded-xl p-4 hover:shadow-lg hover:shadow-green-500/10 transition transform hover:-translate-y-1"
+        >
+          <h4 class="text-base font-semibold mb-1 text-white">
+            Presento mis habilidades
+          </h4>
+          <p class="text-gray-400 text-sm mb-3 leading-snug">
+            Nivel: Fácil — Crea una presentación con TailwindCSS y HTML
+            mostrando tus habilidades.
+          </p>
+          <a href="reto.html" class="text-green-400 text-sm hover:underline"
+            >Ver Reto</a
+          >
+        </div>
+        <div
+          class="fade-in bg-gray-800/80 border border-gray-700 rounded-xl p-4 hover:shadow-lg hover:shadow-green-500/10 transition transform hover:-translate-y-1"
+        >
+          <h4 class="text-base font-semibold mb-1 text-white">
+            Presento mis habilidades
+          </h4>
+          <p class="text-gray-400 text-sm mb-3 leading-snug">
+            Nivel: Fácil — Crea una presentación con TailwindCSS y HTML
+            mostrando tus habilidades.
+          </p>
+          <a href="reto.html" class="text-green-400 text-sm hover:underline"
+            >Ver Reto</a
+          >
+        </div>
+        <div
+          class="fade-in bg-gray-800/80 border border-gray-700 rounded-xl p-4 hover:shadow-lg hover:shadow-green-500/10 transition transform hover:-translate-y-1"
+        >
+          <h4 class="text-base font-semibold mb-1 text-white">
+            Presento mis habilidades
+          </h4>
+          <p class="text-gray-400 text-sm mb-3 leading-snug">
+            Nivel: Fácil — Crea una presentación con TailwindCSS y HTML
+            mostrando tus habilidades.
+          </p>
+          <a href="reto.html" class="text-green-400 text-sm hover:underline"
+            >Ver Reto</a
+          >
+        </div>
+
+        <div
+          class="fade-in bg-gray-800/80 border border-gray-700 rounded-xl p-4 hover:shadow-lg hover:shadow-green-500/10 transition transform hover:-translate-y-1"
+        >
+          <h4 class="text-base font-semibold mb-1 text-white">API REST Quiz</h4>
+          <p class="text-gray-400 text-sm mb-3 leading-snug">
+            Nivel: Medio — Crea un sistema de preguntas usando una API REST con
+            JavaScript.
+          </p>
+          <a href="reto.html" class="text-green-400 text-sm hover:underline"
+            >Ver Reto</a
+          >
+        </div>
+
+        <div
+          class="fade-in bg-gray-800/80 border border-gray-700 rounded-xl p-4 hover:shadow-lg hover:shadow-green-500/10 transition transform hover:-translate-y-1"
+        >
+          <h4 class="text-base font-semibold mb-1 text-white">
+            Algoritmos de Ordenamiento
+          </h4>
+          <p class="text-gray-400 text-sm mb-3 leading-snug">
+            Nivel: Difícil — Implementa y compara algoritmos de ordenamiento en
+            C++.
+          </p>
+          <a href="reto.html" class="text-green-400 text-sm hover:underline"
+            >Ver Reto</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6 mt-16 text-center text-gray-400 text-sm">
+      <p>
+        © 2025 Project Web — Desarrollado por
+        <a
+          href="https://github.com/FayalaCoder"
+          class="text-green-400 hover:text-green-300 transition"
+          >FayalaCoder</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
